@@ -8,3 +8,5 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagrams[''.join(sorted(word))].append(word)
 
     return list(anagrams.values())
+
+
