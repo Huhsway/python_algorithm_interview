@@ -1,0 +1,13 @@
+# 풀이 3 첫 번째 수를 뺀 결과 키 조회
+
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+    nums_map = {}
+    # 키와 값을 바꿔서 딕셔너리로 저장
+    for i, num in enumerate(nums):
+        nums_map[num] = i
+
+    # 타겟에서 첫 번째 수를 뺀 결과를 키로 조회
+    for i, num in enumerate(nums):
+        if target - num in nums_map and i != nums_map[target-num]
+            # i != nums_map[target-num] num과 똑같은 수가 있는지 보려고
+            return [i, nums_map[target - map]]
