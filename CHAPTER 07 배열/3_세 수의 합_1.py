@@ -1,6 +1,6 @@
 # 풀이 1 브루트 포스로 계산
-def threeSum(self, nums: List[int]) -> List[int]
-    result = []
+def threeSum(self, nums: List[int]) -> List[List[int]]
+    results = []
     nums.sort()
 
     # 브루트 포스 n^3 반복
@@ -15,6 +15,6 @@ def threeSum(self, nums: List[int]) -> List[int]
                 if k > j+1 and nums[k] == nums[k-1]:
                     continue
                 if nums[i] + nums[j] + nums[k] == 0:
-                    result.append((nums[i],nums[j],nums[k]))
+                    results.append((nums[i],nums[j],nums[k]))
 
-    return result
+    return results
